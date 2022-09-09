@@ -11,10 +11,11 @@ router.post('/signup',(request,response) => {
         password : request.body.password
     })
     signedUpUser.save()
-    .then((data) => {
+    .then(data => {
         response.json(data) 
-    }).catch((err) => {
-        response.json(err)
+    })
+    .catch(error => {
+        response.json(error)
     }) 
 })
 
