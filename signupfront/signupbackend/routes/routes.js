@@ -1,6 +1,7 @@
 const express = require('express') 
+const router = express.Router()
 const signUpTempleteCopy = require ('../models/SignUpModels') 
-const router = express.Router() 
+ 
 
 router.post('/signup',(request,response) => {
     const signedUpUser = new signUpTempleteCopy({
@@ -12,10 +13,8 @@ router.post('/signup',(request,response) => {
     signedUpUser.save()
     .then((data) => {
         response.json(data) 
-        console.log('successful')
     }).catch((err) => {
         response.json(err)
-        console.log('error')
     }) 
 })
 
