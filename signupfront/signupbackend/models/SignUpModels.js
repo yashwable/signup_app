@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose') 
 
 const signUpTemplete = new mongoose.Schema({
     fullName :{
@@ -23,4 +23,4 @@ const signUpTemplete = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('mytable',signUpTemplete);
+module.exports = mongoose.model('mytable',signUpTemplete) 
