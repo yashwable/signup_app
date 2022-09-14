@@ -9,7 +9,15 @@ function App(){
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        
+        const register = {
+            fullName : inputs.name,
+            username : inputs.username,
+            email : inputs.email,
+            password : inputs.password
+        }
+
+        axios.post('http://localhost:4000/app/signup',register)
+        .then((response) => {console.log(response.data)})
     }
 
     const handleChange = (event)=> {
