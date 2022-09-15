@@ -1,0 +1,40 @@
+.inputClass {
+    color: rgb(21, 22, 104);
+    font-weight: bold;
+    display: block;
+    margin: 5px;
+    padding-left: 20px; ;
+    border-bottom: 1px solid rgb(171, 224, 71);
+}
+
+.submitButton {
+    display: block;
+    color: aqua;
+    background-color: red;
+    margin: 20px;
+    border: 0px;
+    border: 1px solid rgb(216, 201, 201);
+    border-radius: 5px;
+}
+
+.submitButton:hover {
+    background-color: rgb(49, 49, 214);
+}
+.submitButton:active{
+    transform: translate(4px);
+}
+
+.inputField {
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.form{
+    border:2px solid rgb(137, 53, 221);
+    width: 50%;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
